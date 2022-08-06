@@ -32,7 +32,7 @@ function App() {
   };
 
   const total = countTotalFeedback();
-  const positive = countPositiveFeedbackPercentage();
+  const positiveFeedback = countPositiveFeedbackPercentage();
 
   return (
     <div>
@@ -49,7 +49,7 @@ function App() {
             neutral={neutral}
             bad={bad}
             total={total}
-            positivePercentage={positive}
+            positivePercentage={positiveFeedback}
           />
         ) : (
           <Notification message="There is no feedback" />
