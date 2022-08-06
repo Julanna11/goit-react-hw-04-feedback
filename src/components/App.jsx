@@ -3,6 +3,7 @@ import FeedbackOptions from './Feedback/Feedback';
 import Statistics from './Statistic/Statistics';
 import Section from './Section/Section';
 import Notification from './Notification/Notification';
+
 class App extends React.Component {
   state = {
     good: 0,
