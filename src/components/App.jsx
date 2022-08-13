@@ -35,14 +35,12 @@ function App() {
 
   const total = countTotalFeedback();
   const positiveFeedback = countPositiveFeedbackPercentage();
-
+  const value = { good, neutral, bad };
+  const options = Object.keys(value);
   return (
     <div>
       <Section title="Please leave feedback">
-        <FeedbackOptions
-          options={['good', 'neutral', 'bad']}
-          onLeaveFeedback={handleClick}
-        />
+        <FeedbackOptions options={options} onLeaveFeedback={handleClick} />
       </Section>
       <Section title="Statistics">
         {total ? (
